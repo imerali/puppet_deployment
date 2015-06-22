@@ -50,6 +50,25 @@ password: <%= @db_password %>
 <% if @db_replica_set -%>
 replica_set: <%= @db_replica_set %>
 <% end -%>
+<% if @db_ssl -%>
+ssl: <%= @db_ssl %>
+<% end -%>
+<% if @db_ssl_keyfile -%>
+ssl_keyfile: <%= @db_ssl_keyfile %>
+<% end -%>
+<% if @db_ssl_certfile -%>
+ssl_certfile: <%= @db_ssl_certfile %>
+<% end -%>
+<% if @db_verify_ssl -%>
+verify_ssl: <%= @db_verify_ssl %>
+<% end -%>
+<% if @db_ca_path -%>
+ca_path: <%= @db_ca_path %>
+<% end -%>
+
+
+
+
 
 
 # = Server =

@@ -12,6 +12,11 @@ class pulp::server (
     $db_username            = undef,
     $db_password            = undef,
     $db_replica_set         = undef,
+    $db_ssl                 = undef,
+    $db_ssl_keyfile         = undef,
+    $db_ssl_certfile        = undef,
+    $db_ca_path             = undef,
+    $db_verify_ssl          = undef,
 
     # Pulp server
     $server_name        = $pulp::params::server,
